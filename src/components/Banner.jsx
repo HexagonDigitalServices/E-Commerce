@@ -1,4 +1,3 @@
-
 [
   { value: "200K+", label: "Happy Customers", icon: FaHeart },
   { value: "50+", label: "Awards Won", icon: FaRibbon },
