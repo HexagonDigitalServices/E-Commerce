@@ -1,11 +1,21 @@
-import React from "react";
-
+import React, { useState } from "react";
+import { 
+  FaHeart, 
+  FaSeedling, 
+  FaSun, 
+  FaSnowflake, 
+  FaLeaf, 
+  FaCloudRain, 
+  FaCloud,
+  FaChevronDown
+} from "react-icons/fa";
 import SC1 from "../assets/SC1.jpg";
 import SC2 from "../assets/SC2.jpg";
 import SC3 from "../assets/SC3.jpg";
 import SC4 from "../assets/SC4.jpg";
 import SC5 from "../assets/SC5.jpg";
 import SC6 from "../assets/SC6.jpg";
+import "../components/theme.css";
 
 const seasonData = [
   { title: "SPRING", images: [SC1] },
