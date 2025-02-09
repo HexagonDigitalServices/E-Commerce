@@ -1,4 +1,9 @@
 import React from "react";
+import { FaStar, FaHeart } from "react-icons/fa";
+import WTS1 from "../assets/WTS1.jpg";
+import WTS2 from "../assets/WTS2.jpg";
+import WTS3 from "../assets/WTS3.jpg";
+import "../components/theme.css";
 
 const testimonials = [
   {
@@ -26,6 +31,3 @@ const testimonials = [
       "This shirt is very pretty and nice. The color is cute too. At first, I bought it as a present for my friend.",
   },
 ];
-;
-
-export default WTS;
