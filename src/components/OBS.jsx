@@ -1,4 +1,9 @@
 import React from "react";
+import { FaHeart } from "react-icons/fa";
+import OBS1 from "../assets/OBS1.png";
+import OBS2 from "../assets/OBS2.png";
+import OBS3 from "../assets/OBS3.png";
+import "../components/theme.css";
 
 const bestSellers = [
   {
@@ -20,6 +25,3 @@ const bestSellers = [
     price: "Rs 129.000",
   },
 ];
-
-
-export default OBS;
