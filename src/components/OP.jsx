@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useState, useEffect } from "react";
+import { FaHeart } from "react-icons/fa";
 import OP1 from "../assets/OP1.png";
 import OP2 from "../assets/OP2.png";
 import OP3 from "../assets/OP3.png";
@@ -55,5 +55,27 @@ const products = {
   ],
 };
 
+const OP = () => {
+  const [activeTab, setActiveTab] = useState("Top");
+  // Display all products by default
+  const [visibleProducts] = useState(
+    categories.reduce(
+      (acc, category) => ({
+        ...acc,
+        [category]: products[category].length,
+      }),
+      {}
+    )
+  );
+  const [hearts, setHearts] = useState([]);
 
-export default OP;
+  useEffect(() => {
+    const floatingHearts = Array.from({ length: 20 }).map((_, i) => ({
+      id: i,
+      top: `${Math.random() * 100}%`,
+      left: `${Math.random() * 100}%`,
+      size: `${Math.random() * 2 + 1}rem`,
+      duration: `${Math.random() * 3 + 2}s`,
+    }));
+    setHearts(floatingHearts);
+  }, []);
