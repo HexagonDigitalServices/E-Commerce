@@ -1,4 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import {
+  FaArrowRight,
+  FaHeart,
+  FaTshirt,
+  FaCrown,
+  FaLeaf,
+  FaGift,
+  FaFire,
+} from "react-icons/fa";
+import OFC1 from "../assets/OFC1.jpg";
+import OFC2 from "../assets/OFC2.jpg";
+import OFC3 from "../assets/OFC3.jpg";
+import OFC4 from "../assets/OFC4.jpg";
+import OFC5 from "../assets/OFC5.jpg";
+import OFC6 from "../assets/OFC6.jpg";
+import "../components/theme.css";
 
 const collections = [
   {
